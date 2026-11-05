@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "orbit-hermite-gap-check"
+version = "0.1.0a1"
+description = "FR: Comparer interpolation orbitale et lacunes de mesures | EN: Compare orbital interpolation and observation gaps | ES: Comparar interpolación orbital y huecos de medición"
+requires-python = ">=3.11"
+license = "MIT"
+
+[project.scripts]
+orbit-hermite-gap-check = "orbit_hermite_gap_check.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["orbit_hermite_gap_check*"]
